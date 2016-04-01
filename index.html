@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aranja — Code in the Dark</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    a {
+      text-decoration: none;
+    }
+    .page {
+      background: #000 repeating-linear-gradient(135deg, #111, #111 5px, #000 5px, #000 10px);
+      color: #ffffff;
+      display: flex;
+      font-family: 'Inconsolata', monospace;
+      font-size: 24px;
+      flex-direction: column;
+      min-height: 100%;
+    }
+    .page__header,
+    .page__main,
+    .page__footer {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .page__main {
+      flex: 1;
+    }
+    .challenges {
+      border: 1px solid #777;
+      border-bottom: none;
+      list-style-type: none;
+      padding: 0;
+      width: 90%;
+    }
+    .challenges__item {
+      border-bottom: 1px solid #777;
+      padding: 24px;
+    }
+    .challenges__link {
+      color: #45ba75;
+    }
+    .challenges__link:hover {
+      color: #38945d;
+    }
+    .trp {
+      background: transparent no-repeat center / contain;
+      border: 0;
+      color: transparent;
+      font: 0/0 a;
+      text-shadow: none;
+    }
+    .aranja {
+      background-image: url(images/aranja.svg);
+      height: 50px;
+      margin: 20px;
+      opacity: .7;
+      width: 100px;
+    }
+    .cid {
+      background-image: url(images/logo.png);
+      height: 150px;
+      margin: 50px 0;
+      width: 150px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <header class="page__header">
+      <a href="http://codeinthedark.com/" class="trp cid">Code in the Dark</a>
+    </header>
+    <main class="page__main" role="main">
+      <ul class="challenges">
+        <li class="challenges__item">
+          <a class="challenges__link" href="challenge2/">Challenge 2</a>
+        </li>
+      </ul>
+    </main>
+    <footer class="page__footer">
+      <a href="http://aranja.com/" class="trp aranja">Aranja</a>
+    </footer>
+  </div>
+</body>
+</html>
